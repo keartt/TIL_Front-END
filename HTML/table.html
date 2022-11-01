@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table, tr, 
+        th,
+        td {
+         border: 1px solid black;
+         border-collapse: collapse;    /* 겹치는 건 하나로 통일 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. thead, tbody, tfoot, caption이나 colgroup은 하지 않습니다
+        2. 구도를 잡는 용도로 사용하지 않습니다.
+    -->
+   <table>
+    <tr>
+        <th>hellp world</th>
+        <th>hellp world</th>
+        <th>hellp world</th>
+    </tr>
+    <tr>
+        <td>hellp world</td>
+        <td>hellp world</td>
+        <td>hellp world</td>
+    </tr>
+    <tr>
+        <td>hellp world</td>
+        <td>hellp world</td>
+        <td>hellp world</td>
+    </tr>
+   </table> <br>
+
+   <table> 
+    <thead>
+      <tr>
+        <th>구분</th> <th>이름</th> <th>판매량</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td> <td>해리포터</td> <td>100</td>
+      </tr>
+      <tr>
+        <td>2</td> <td>헝거게임</td> <td>200</td>
+      </tr>
+      <tr>
+        <td>3</td> <td>반지의제왕</td> <td>300</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+    <td colspan="2">총 판매량</td> <td>600</td> <!-- 컬럼, 행 병합 -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
